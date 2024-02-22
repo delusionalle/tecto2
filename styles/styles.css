@@ -101,7 +101,7 @@ body, html {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-    /*width: 30%; !* Adjust the width of the cards as needed *!*/
+    width: auto; /* Adjust the width of the cards as needed */
 }
 
 .card h2 {
@@ -115,9 +115,23 @@ body, html {
 }
 
 .large-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
     width: auto;
     max-width: 50%; /* Adjust the max width as needed */
     margin: 0 auto; /* Center the card */
+}
+
+.large-card h2 {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.large-card p {
+    color: black;
 }
 
 .latest-content {
@@ -143,5 +157,5 @@ body, html {
     grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); /* Adjust the min width of the cards as needed */
     gap: 20px; /* Adjust the gap between cards as needed */
     justify-content: center;
-    padding: 20px;
+    padding: 12px;
 }
