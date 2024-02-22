@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Alerts</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#alerts">Alerts</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div id="home" class="section">
+    <!-- Home section content goes here -->
+</div>
+
+<div id="alerts" class="section">
+    <!-- Alerts section content goes here -->
+</div>
+
+<div id="about" class="section">
+    <!-- About section content goes here -->
+</div>
+
+<div id="contact" class="section">
+    <!-- Contact section content goes here -->
+</div>
+
+<script>
+    // Add scroll and active link functionality to the navbar
+    window.onscroll = function() {
+        var sections = document.querySelectorAll('.section');
+        var navLinks = document.querySelectorAll('.navbar a');
+
+        sections.forEach(function(section, index) {
+            var top = section.offsetTop - 100;
+            var bottom = top + section.offsetHeight;
+            if (window.scrollY >= top && window.scrollY <= bottom) {
+                navLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                navLinks[index].classList.add('active');
+            }
+        });
+    };
+</script>
+
+</body>
+</html>
