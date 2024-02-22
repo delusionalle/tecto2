@@ -9,22 +9,130 @@
 <body>
 
 <div class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#alerts">Alerts</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="navbar-brand">
+        <img src="assets/logo.png" alt="Tecto Logo">
+        <span class="wordmark">Tecto</span>
+    </div>
+
+    <a href="#home" class="active">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#alerts">Землетрясения</a>
+    <a href="#zoning">Зонирование</a>
+    <a href="#shelters">Убежища</a>
+    <a href="#safety">Безопасность</a>
+    <a href="#contact">Контакты</a>
 </div>
 
 <div id="home" class="section">
     <!-- Home section content goes here -->
-</div>
-
-<div id="alerts" class="section">
-    <!-- Alerts section content goes here -->
+    <div class="content">
+        <img src="assets/logo.png" alt="Tecto Logo" class="logo">
+        <p style="font-size: 1.5em; color: white;">Tecto - землетрясения не должны быть неожиданностью.</p>
+        <a href="#about" class="btn">Подробнее</a>
+    </div>
 </div>
 
 <div id="about" class="section">
+    <!-- Alerts section content goes here -->
+    <div class="card-container">
+        <div class="card">
+            <h2>Что такое Tecto?</h2>
+            <p>Tecto - стартап, который специализируется на создании
+                веб-сайта и мобильного приложения, посвященных
+                сейсмологической ситуации города Центральной Азии.</p>
+        </div>
+        <div class="card">
+            <h2>Цель проекта</h2>
+            <p>Целью tecto является предоставление жителям актуальной
+                информации о сейсмической активности в регионе с целью
+                повышения общественной безопасности и готовности к
+                возможным сейсмическим событиям.</p>
+        </div>
+        <div class="card">
+            <h2>Что мы предоставляем?</h2>
+            <p>Веб-сайт и мобильное приложение, включающие: - Карту
+                землетрясений с уведомлениями в приложении. - Карту
+                зонирования. - Карту убежищ. - Уроки безопасности.</p>
+        </div>
+    </div>
+</div>
+
+<div id="alerts" class="section">
     <!-- About section content goes here -->
+    <div class="card large-card">
+        <h2>Последние землетрясения</h2>
+        <p>Недавние землетрясения, записанные нашими источниками. Нажмите на картинки, чтобы получить свежие данные.</p>
+        <div class="latest-content">
+            <a href="https://voshod-solnca.ru/earthquake/%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" class="latest-link">
+                <!-- Placeholder for the link -->
+                <img src="assets/earthquake_data.png" alt="Latest Earthquakes Table" class="latest-img">
+            </a>
+            <a href="https://voshod-solnca.ru/earthquake/%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" class="latest-link">
+                <!-- Placeholder for the link -->
+                <img src="assets/earthquake_map.png" alt="Earthquake Map" class="latest-img">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="zoning" class="section">
+    <div class="card large-card">
+        <h2>Зонирование</h2>
+        <p>Карта сейсмического районирования г. Алматы. Перейдите по картинке для наивысшего качества.</p>
+        <div class="latest-content">
+            <iframe
+                    src="https://drive.google.com/file/d/1Zh5-HwzypuZ_hMlQI1htKJD8vEdgX3jt/preview"
+                    width="620"
+                    height="640"
+                    allow="autoplay"
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="shelters" class="section">
+    <div class="card large-card">
+        <h2>Убежища</h2>
+        <p>Карта сейсмичесмих убежищ г. Алматы.</p>
+        <div class="latest-content">
+            <a href="https://2gis.kz/almaty/branches/70000001044529606">
+                <img src="assets/shelters.png" alt="shelters in Almaty"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="safety" class="section">
+    <div class="card-grid">
+        <div class="card">
+            <h2>Семейный тренинг Защита от землетрясения</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xxHdxtquTuk?si=E5o6Z4bfRF9T0ISz"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="card">
+            <h2>Тревожный чемодан</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DGCpui0xKno?si=DI6VPY-65prrTzYV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="card">
+            <h2>Как действовать при землетрясении</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AFemc1jr_P8?si=In8Imc40DrwXXIjB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="card">
+            <h2>Как действовать при землетрясении</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AFemc1jr_P8?si=In8Imc40DrwXXIjB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 
 <div id="contact" class="section">
@@ -33,15 +141,15 @@
 
 <script>
     // Add scroll and active link functionality to the navbar
-    window.onscroll = function() {
+    window.onscroll = function () {
         var sections = document.querySelectorAll('.section');
         var navLinks = document.querySelectorAll('.navbar a');
 
-        sections.forEach(function(section, index) {
+        sections.forEach(function (section, index) {
             var top = section.offsetTop - 100;
             var bottom = top + section.offsetHeight;
             if (window.scrollY >= top && window.scrollY <= bottom) {
-                navLinks.forEach(function(link) {
+                navLinks.forEach(function (link) {
                     link.classList.remove('active');
                 });
                 navLinks[index].classList.add('active');

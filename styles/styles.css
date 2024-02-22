@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-behavior: smooth;
     font-family: Arial, sans-serif;
 }
 
@@ -9,8 +10,10 @@ body, html {
     background-color: #333;
     overflow: hidden;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 10px; /* Added margin from the top */
+    left: 10px; /* Added margin from the left */
+    right: 10px; /* Added margin from the right */
+    border-radius: 10px; /* Added border radius for rounded corners */
     z-index: 1000;
 }
 
@@ -28,12 +31,117 @@ body, html {
     color: black;
 }
 
+.navbar-brand {
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.navbar-brand img {
+    height: 32px; /* Adjust the height of the logo as needed */
+}
+
+.wordmark {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+/* Hide the wordmark on smaller screens */
+@media screen and (max-width: 600px) {
+    .wordmark {
+        display: none;
+    }
+}
+
 .section {
     padding: 60px 0;
-    height: 100vh;
     background-color: #e96855;
 }
 
 .active {
     background-color: #4CAF50;
+}
+
+.content {
+    text-align: center;
+    padding-top: 20px; /* Adjust the padding as needed */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between cards as needed */
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    /*width: 30%; !* Adjust the width of the cards as needed *!*/
+}
+
+.card h2 {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: black;
+}
+
+.large-card {
+    width: auto;
+    max-width: 50%; /* Adjust the max width as needed */
+    margin: 0 auto; /* Center the card */
+}
+
+.latest-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images as needed */
+}
+
+.latest-link {
+    flex-basis: calc(50% - 20px); /* Adjust the width of the images, accounting for the gap */
+    max-width: 100%;
+}
+
+.latest-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); /* Adjust the min width of the cards as needed */
+    gap: 20px; /* Adjust the gap between cards as needed */
+    justify-content: center;
+    padding: 20px;
 }
